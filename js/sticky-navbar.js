@@ -1,10 +1,10 @@
-// Basic sticky navbar component 
+// Basic sticky navbar component
 $(document).ready(function() {
 
   // Select DOM element with "data-toggle" set to "sticky-navbar"
   $('[data-toggle="sticky-navbar"]').each(function() {
 
-    // When the element is no longer visible due to page scroll, 
+    // When the element is no longer visible due to page scroll,
     // move it to the top of the screen
     var stickyToggle = function(navbar, navbarWrapper, scrollElement) {
       if (scrollElement.scrollTop() >= navbarWrapper.offset().top){
@@ -21,7 +21,7 @@ $(document).ready(function() {
         navbarWrapper = $('<div>').addClass('sticky-navbar-wrapper');
 
     navbar.before(navbarWrapper).addClass('sticky');
-    
+
     // On page load
     stickyToggle(navbar, navbarWrapper, $(window));
 
