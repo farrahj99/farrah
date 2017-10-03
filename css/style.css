@@ -1,5 +1,5 @@
 @font-face {
-  font-family: system;
+  font-family: 'Inconsolata', monospace;
   font-style: normal;
   font-weight: 300;
   src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
@@ -7,17 +7,25 @@
 
 /* Basic Page Styling */
 html, body {
-  font-family: "system";
+  font-family: "Inconsolata";
   height: 100%;
   color: #666;
-  background: #e5e5e5;
+  background: #ffd1dc;
 }
+
+h1 {
+  color: #ffd1dc;
+  font-size: 3em;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
+
 a {
   color: #fff;
 }
+
 a:hover {
   text-decoration: underline;
   color: #fff;
@@ -36,14 +44,16 @@ a:hover {
 
 /* Header Styling */
 .header {
-  background: #49c5ff;
+  background: url(https://i.imgur.com/QktDEm6.jpg) no-repeat center center fixed;
   color: #fff;
 }
+
 .header .social {
   margin-bottom: 0;
   padding-top: 15px;
   padding-bottom: 60px;
 }
+
 .header .social a {
   display: inline-block;
   text-align: center;
@@ -87,6 +97,75 @@ a:hover {
   border-radius: 2px;
 }
 
+.name, .occup, .descrip {
+  width: 100%;
+  height: auto;
+  background-color: rgba(210,180,140,.8);
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+a.scrollto.nav-link {
+  font-size: 1.5em;
+  font-weight: bolder;
+  background-color: rgba(210,180,140,.8);
+  border-radius: 6px;
+}
+
+a.btn {
+  width: 100%;
+  height: auto;
+  background-color: rgba(210,180,140,.8);
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.card-text {
+  text-align: center;
+  padding-top: 13px;
+}
+
+#section-1 {
+  background: url(https://i.imgur.com/Thbizwr.jpg) no-repeat center center fixed;
+  color: #808080;
+}
+
+#section-2 {
+  background: url(https://i.imgur.com/z44YgRX.jpg) no-repeat center center fixed;
+  color: black;
+}
+
+.cardOne {
+  width: 100%;
+  height: auto;
+  border: 2px solid #49c5ff;
+  border-radius: 6px;
+}
+
+.cardTwo {
+  width: 55%;
+  height: 135px;
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #49c5ff;
+  border-radius: 6px;
+}
+
+.cardThree {
+  width: 55%;
+  height: 135px;
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #49c5ff;
+  border-radius: 6px;
+}
+
+
+.card-title {
+  text-align: center;
+}
 /* Timeline Styling */
 .timeline {
   border-left: 3px solid #49c5ff;
@@ -137,6 +216,37 @@ a:hover {
   background: #49c5ff;
   z-index: 10;
 }
+
+.mb-4.ex {
+  text-align: center;
+}
+
+.mb-4.who {
+  width: 19%;
+  height: auto;
+  background-color: rgba(169,169,169,.6);
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.mb-4.pro {
+  text-align: center;
+}
+
+.mb-4.con {
+  text-align: center;
+}
+
+.item.col-12.col-md-6 {
+  width: 80%;
+  height: auto;
+  background-color: rgba(169,169,169,.85);
+  padding: 15px 5px 10px 15px;
+  border-radius: 6px;
+}
+
 .timeline .job-title {
   position: absolute;
   left: -250px;
